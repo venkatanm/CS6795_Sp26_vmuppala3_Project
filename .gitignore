@@ -1,0 +1,47 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+env/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+.cursorignore
+.cursorrules
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/.next/
+
+# Logs / debug
+*.log
+log_debug*
+
+# Data / binary
+*.pdf
+*.docx
+*.doc
+*.csv
+*.jsonl
+data/
+batch_jobs/
+
+# Test artifacts
+playwright-report/
+test-results/
+
+# Claude
+.claude/

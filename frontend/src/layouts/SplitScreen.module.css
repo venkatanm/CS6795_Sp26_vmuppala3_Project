@@ -1,0 +1,266 @@
+/**
+ * SplitScreen Layout Styles
+ * 
+ * Implements a fixed-height, two-column layout with independent scrolling
+ * for Reading & Writing exam sections.
+ */
+
+/* Import serif font for passage text */
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600&family=Merriweather:wght@400;700&display=swap');
+
+.container {
+  /* Fixed viewport height */
+  height: 100vh;
+  width: 100%;
+  
+  /* Flexbox for two-column layout */
+  display: flex;
+  flex-direction: row;
+  
+  /* Prevent container from scrolling */
+  overflow: hidden;
+  
+  /* Background color */
+  background-color: #ffffff;
+}
+
+/* Left Pane - Passage */
+.leftPane {
+  /* Width controlled by state (default 50%) */
+  /* Independent scrolling */
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+  /* Background */
+  background-color: #ffffff;
+  
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+  
+  /* Custom scrollbar styling (optional, for better UX) */
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+  
+  /* Transition for smooth resizing */
+  transition: width 0.1s ease-out;
+}
+
+.leftPane::-webkit-scrollbar {
+  width: 8px;
+}
+
+.leftPane::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.leftPane::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.leftPane::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Right Pane - Question */
+.rightPane {
+  /* Width controlled by state (default 50%) */
+  /* Independent scrolling */
+  overflow-y: auto;
+  overflow-x: hidden;
+  
+  /* Background */
+  background-color: #ffffff;
+  
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+  
+  /* Custom scrollbar styling */
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 #f1f5f9;
+  
+  /* Transition for smooth resizing */
+  transition: width 0.1s ease-out;
+}
+
+.rightPane::-webkit-scrollbar {
+  width: 8px;
+}
+
+.rightPane::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.rightPane::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+.rightPane::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Divider between panes */
+.divider {
+  /* 1px gray border */
+  width: 1px;
+  background-color: #e5e7eb;
+  flex-shrink: 0;
+  
+  /* Ensure divider is always visible */
+  z-index: 1;
+  position: relative;
+}
+
+/* Resizable divider with handle */
+.resizableDivider {
+  width: 4px; /* Wider for easier grabbing */
+  background-color: #e5e7eb;
+  cursor: col-resize; /* Column resize cursor */
+  position: relative;
+  user-select: none; /* Prevent text selection while dragging */
+}
+
+.resizableDivider:hover {
+  background-color: #cbd5e1; /* Darker on hover */
+}
+
+.resizableDivider:hover .dividerHandle {
+  opacity: 1;
+}
+
+.dividerHandle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none; /* Don't block drag events */
+}
+
+.dividerIcon {
+  width: 16px;
+  height: 16px;
+  color: #6b7280;
+}
+
+/* Disable transition during resize for smoother dragging */
+.container.resizing .leftPane,
+.container.resizing .rightPane {
+  transition: none;
+}
+
+/* Content wrapper for each pane */
+.paneContent {
+  /* Increased padding for better readability */
+  padding: 48px;
+  
+  /* Ensure content doesn't overflow */
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+/* Typography for left pane (passage) */
+.leftPane .paneContent {
+  /* Serif font for passage text */
+  font-family: 'Source Serif Pro', 'Merriweather', Georgia, 'Times New Roman', serif;
+  
+  /* Line height for readability */
+  line-height: 1.6;
+  
+  /* Font size */
+  font-size: 16px;
+  
+  /* Text color */
+  color: #1f2937;
+}
+
+/* Typography for right pane (question) */
+.rightPane .paneContent {
+  /* Sans-serif for question text (matches UI standards) */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  
+  /* Line height */
+  line-height: 1.6;
+  
+  /* Font size */
+  font-size: 16px;
+  
+  /* Text color */
+  color: #1f2937;
+}
+
+/* Responsive design for mobile/tablet */
+@media (max-width: 768px) {
+  .container {
+    /* Stack vertically on mobile */
+    flex-direction: column;
+  }
+  
+  .leftPane,
+  .rightPane {
+    /* Full width on mobile */
+    width: 100%;
+    flex: 0 0 auto;
+    
+    /* Fixed height for each pane on mobile */
+    height: 50vh;
+  }
+  
+  .divider {
+    /* Horizontal divider on mobile */
+    width: 100%;
+    height: 1px;
+  }
+  
+  .paneContent {
+    /* Reduced padding on mobile but still readable */
+    padding: 32px;
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: #111827;
+  }
+  
+  .leftPane,
+  .rightPane {
+    background-color: #111827;
+  }
+  
+  .divider {
+    background-color: #374151;
+  }
+  
+  .leftPane .paneContent,
+  .rightPane .paneContent {
+    color: #f9fafb;
+  }
+  
+  .leftPane::-webkit-scrollbar-track,
+  .rightPane::-webkit-scrollbar-track {
+    background: #1f2937;
+  }
+  
+  .leftPane::-webkit-scrollbar-thumb,
+  .rightPane::-webkit-scrollbar-thumb {
+    background: #4b5563;
+  }
+  
+  .leftPane::-webkit-scrollbar-thumb:hover,
+  .rightPane::-webkit-scrollbar-thumb:hover {
+    background: #6b7280;
+  }
+}

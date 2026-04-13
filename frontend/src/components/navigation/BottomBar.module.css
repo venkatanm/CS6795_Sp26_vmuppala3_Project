@@ -1,0 +1,124 @@
+.bottomBar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  background: white;
+  border-top: 1px dashed #d1d5db; /* Dashed line like Bluebook */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  z-index: 100;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+}
+
+.studentNameButton {
+  padding: 10px 18px; /* Larger like Bluebook */
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  font-size: 16px; /* Larger font like Bluebook */
+  color: #1f2937;
+  font-weight: 500;
+  cursor: default; /* Not clickable, just display */
+}
+
+.centerSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.questionCounterButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px; /* Larger like Bluebook */
+  background-color: #1f2937; /* Dark gray/black like Bluebook */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px; /* Larger font like Bluebook */
+  cursor: pointer;
+  transition: background-color 0.2s;
+  white-space: nowrap;
+}
+
+.questionCounterButton:hover {
+  background-color: #374151;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+}
+
+.nextButton {
+  min-width: 110px; /* Larger like Bluebook */
+  padding: 12px 28px; /* Larger like Bluebook */
+  background-color: #3b82f6; /* Blue like Bluebook */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px; /* Larger font like Bluebook */
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.nextButton:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.nextButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .bottomBar {
+    background: #111827;
+    border-top-color: #374151;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  .questionCounter {
+    color: #f9fafb;
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .bottomBar {
+    padding: 0 12px;
+    height: 56px;
+  }
+
+  .questionCounter {
+    font-size: 12px;
+  }
+
+  .centerSection {
+    gap: 8px;
+  }
+
+  .navButton,
+  .markButton {
+    min-width: auto;
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .markButton {
+    min-width: 120px;
+  }
+}

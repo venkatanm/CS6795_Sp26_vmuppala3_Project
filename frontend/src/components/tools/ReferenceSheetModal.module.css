@@ -1,0 +1,204 @@
+.modal {
+  position: fixed;
+  z-index: 1000; /* High z-index to float above everything */
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  user-select: none;
+  border: 1px solid #e5e7eb;
+}
+
+/* Bluebook-style Dark Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  background: #2B2B2B; /* Dark slate background like Bluebook */
+  border-bottom: 1px solid #1a1a1a;
+  cursor: grab;
+  user-select: none;
+  height: 48px;
+  min-height: 48px;
+}
+
+.header:active {
+  cursor: grabbing;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex: 1;
+  height: 100%;
+  padding-left: 16px;
+}
+
+.headerTitle {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.headerActions {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  padding-right: 8px;
+}
+
+.headerButton {
+  padding: 6px;
+  min-width: auto;
+  height: auto;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.headerButton:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  padding: 24px;
+  gap: 24px;
+}
+
+/* Row 1: Basic Area/Volume/Pythagorean - 5 column grid */
+.row1 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.formulaItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.diagram {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 4px;
+}
+
+.diagram3d {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 4px;
+}
+
+.formula {
+  font-size: 14px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+/* Row 2: Special Right Triangles */
+.row2 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.specialTrianglesHeader {
+  margin-bottom: 8px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.specialTriangles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.triangleItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.triangleDiagram {
+  width: 120px;
+  height: 100px;
+}
+
+.triangleLabels {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+/* Row 3: 3D Volume - 5 column grid */
+.row3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+/* Row 4: Text Rules */
+.row4 {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 8px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.textRule {
+  font-size: 14px;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .modal {
+    background: #1f2937;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    border-color: #374151;
+  }
+
+  .content {
+    background: #1f2937;
+  }
+
+  .formula,
+  .textRule,
+  .sectionTitle,
+  .triangleLabels {
+    color: #e5e7eb;
+  }
+
+  .row4 {
+    border-top-color: #374151;
+  }
+}

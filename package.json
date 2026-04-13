@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@clerk/testing": "^2.0.7",
+    "vitest": "^4.0.18"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.58.2"
+  }
+}

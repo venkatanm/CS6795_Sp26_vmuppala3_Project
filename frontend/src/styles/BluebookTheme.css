@@ -1,0 +1,152 @@
+/**
+ * Bluebook Theme CSS
+ * 
+ * Defines the specific color palette and styling used in the Bluebook exam interface.
+ * These colors match the official Bluebook testing application.
+ */
+
+:root {
+  /* Primary Colors */
+  --bluebook-black: #1a1a1a;
+  --bluebook-white: #ffffff;
+  --bluebook-gray-light: #f5f5f5;
+  --bluebook-gray-medium: #e5e5e5;
+  --bluebook-gray-dark: #666666;
+  
+  /* Accent Colors */
+  --bluebook-blue: #0066cc;
+  --bluebook-blue-hover: #0052a3;
+  --bluebook-red: #dc2626;
+  --bluebook-red-hover: #b91c1c;
+  --bluebook-green: #16a34a;
+  
+  /* Text Colors */
+  --bluebook-text-primary: #1a1a1a;
+  --bluebook-text-secondary: #666666;
+  --bluebook-text-inverse: #ffffff;
+  
+  /* Border Colors */
+  --bluebook-border-light: #e5e5e5;
+  --bluebook-border-medium: #cccccc;
+  --bluebook-border-dark: #999999;
+  
+  /* Background Colors */
+  --bluebook-bg-primary: #ffffff;
+  --bluebook-bg-secondary: #f5f5f5;
+  --bluebook-bg-header: #1a1a1a;
+  --bluebook-bg-footer: #ffffff;
+  
+  /* Highlight Colors */
+  --bluebook-highlight-yellow: #fff9c4;
+  --bluebook-highlight-blue: #e3f2fd;
+  
+  /* Status Colors */
+  --bluebook-status-answered: #1a1a1a;
+  --bluebook-status-unanswered: #ffffff;
+  --bluebook-status-flagged: #dc2626;
+  --bluebook-status-current: #0066cc;
+  
+  /* Spacing */
+  --bluebook-spacing-xs: 4px;
+  --bluebook-spacing-sm: 8px;
+  --bluebook-spacing-md: 16px;
+  --bluebook-spacing-lg: 24px;
+  --bluebook-spacing-xl: 32px;
+  
+  /* Typography */
+  --bluebook-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  --bluebook-font-family-serif: 'Source Serif Pro', 'Merriweather', Georgia, 'Times New Roman', serif;
+  
+  /* Font Sizes */
+  --bluebook-font-size-xs: 12px;
+  --bluebook-font-size-sm: 14px;
+  --bluebook-font-size-base: 16px;
+  --bluebook-font-size-lg: 18px;
+  --bluebook-font-size-xl: 20px;
+  
+  /* Z-Index Layers */
+  --bluebook-z-base: 1;
+  --bluebook-z-header: 40;
+  --bluebook-z-footer: 40;
+  --bluebook-z-modal: 50;
+  --bluebook-z-overlay: 100;
+}
+
+/* Apply Bluebook theme to exam interface */
+.bluebook-theme {
+  font-family: var(--bluebook-font-family);
+  color: var(--bluebook-text-primary);
+  background-color: var(--bluebook-bg-primary);
+}
+
+/* Header Styles */
+.bluebook-header {
+  background-color: var(--bluebook-bg-header);
+  color: var(--bluebook-text-inverse);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Footer Styles */
+.bluebook-footer {
+  background-color: var(--bluebook-bg-footer);
+  border-top: 1px solid var(--bluebook-border-light);
+}
+
+/* Button Styles */
+.bluebook-button {
+  font-family: var(--bluebook-font-family);
+  font-size: var(--bluebook-font-size-base);
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.bluebook-button-primary {
+  background-color: var(--bluebook-blue);
+  color: var(--bluebook-text-inverse);
+  border: 1px solid var(--bluebook-blue);
+}
+
+.bluebook-button-primary:hover {
+  background-color: var(--bluebook-blue-hover);
+  border-color: var(--bluebook-blue-hover);
+}
+
+.bluebook-button-secondary {
+  background-color: var(--bluebook-bg-primary);
+  color: var(--bluebook-text-primary);
+  border: 1px solid var(--bluebook-border-medium);
+}
+
+.bluebook-button-secondary:hover {
+  background-color: var(--bluebook-bg-secondary);
+  border-color: var(--bluebook-border-dark);
+}
+
+/* Text Highlight */
+.bluebook-highlight {
+  background-color: var(--bluebook-highlight-yellow);
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+/* Status Indicators */
+.bluebook-status-answered {
+  background-color: var(--bluebook-status-answered);
+  color: var(--bluebook-text-inverse);
+}
+
+.bluebook-status-unanswered {
+  background-color: var(--bluebook-status-unanswered);
+  border: 2px dashed var(--bluebook-border-medium);
+}
+
+.bluebook-status-flagged {
+  border-color: var(--bluebook-status-flagged);
+  border-width: 2px;
+}
+
+.bluebook-status-current {
+  border-color: var(--bluebook-status-current);
+  border-width: 2px;
+}

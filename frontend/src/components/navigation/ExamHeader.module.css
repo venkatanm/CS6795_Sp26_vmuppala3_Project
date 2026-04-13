@@ -1,0 +1,195 @@
+.header {
+  position: relative; /* Not fixed - part of flex layout */
+  width: 100%;
+  background-color: #ffffff; /* White background like Bluebook */
+  color: #1a1a1a; /* Dark text */
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  z-index: 40;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Top bar with branding and controls */
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px; /* Increased from 12px */
+  min-height: 72px; /* Increased from 48px */
+  border-bottom: 1px solid #e5e7eb;
+  position: relative; /* For absolute positioning of center section */
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brandName {
+  font-size: 20px; /* Larger like Bluebook */
+  font-weight: 600;
+  color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sectionInfo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px; /* Larger like Bluebook */
+  color: #4b5563;
+}
+
+.directionsButton {
+  background: none;
+  border: none;
+  color: #4b5563;
+  cursor: pointer;
+  font-size: 16px; /* Larger like Bluebook */
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.directionsButton:hover {
+  background-color: #f3f4f6;
+}
+
+.centerSection {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.timerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.timerDisplay {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Increased gap */
+  font-family: 'Courier New', monospace;
+  font-size: 24px; /* Increased from 18px for better visibility */
+  font-weight: 600; /* Increased from 500 for better visibility */
+  color: #1a1a1a;
+  padding: 8px 12px; /* Added padding for prominence */
+  background-color: #f9fafb; /* Light background to make it stand out */
+  border-radius: 6px;
+}
+
+.timerText {
+  min-width: 64px; /* Increased from 48px */
+  text-align: center;
+  letter-spacing: 0.05em; /* Better spacing for readability */
+}
+
+.hideButton,
+.showButton {
+  background: none;
+  border: none;
+  color: #4b5563;
+  cursor: pointer;
+  font-size: 14px; /* Slightly smaller for button below */
+  padding: 4px 8px; /* Adjusted padding */
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.hideButton:hover,
+.showButton:hover {
+  background-color: #f3f4f6;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.syncStatus {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px;
+  cursor: help;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.syncStatus:hover {
+  background-color: #f3f4f6;
+}
+
+.toolButton {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #1a1a1a;
+  transition: all 0.2s;
+  font-size: 15px; /* Larger like Bluebook */
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+.toolButtonContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.toolButtonContent span {
+  font-size: 12px;
+  line-height: 1;
+}
+
+.toolButton:hover {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.toolButtonActive {
+  background-color: #3b82f6 !important; /* Blue background when active */
+  border-color: #3b82f6 !important;
+  color: #ffffff !important; /* White text when active */
+}
+
+.toolButtonActive:hover {
+  background-color: #2563eb !important; /* Darker blue on hover */
+  border-color: #2563eb !important;
+}
+
+/* Bottom bar with question counter */
+.bottomBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 24px;
+  min-height: 40px;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.questionCounter {
+  font-size: 14px;
+  font-weight: 500;
+  color: #4b5563;
+}

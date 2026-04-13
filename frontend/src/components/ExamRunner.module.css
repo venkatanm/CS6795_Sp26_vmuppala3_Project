@@ -1,0 +1,403 @@
+/* src/pages/ExamRunner.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Critical: Force full viewport height */
+    width: 100vw;
+    overflow: hidden; /* Prevent body scroll */
+    background-color: #ffffff; /* White background like Bluebook */
+  }
+  
+  .header {
+    height: auto; /* Auto height for Bluebook-style header */
+    min-height: 80px;
+    flex-shrink: 0; /* Never shrink */
+    background-color: #ffffff; /* White background like Bluebook */
+    color: #1a1a1a; /* Dark text */
+    z-index: 40;
+    border-bottom: 1px solid #e5e7eb; /* Light border */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .mainArea {
+    position: relative;
+    z-index: 10;
+    flex: 1; /* Take up all remaining space */
+    overflow: hidden; 
+    display: flex; /* Establish flex context for SplitScreen */
+    background-color: #ffffff;
+  }
+  
+  .footer {
+    position: relative;
+    z-index: 50; /* Ensures buttons are always on top */
+    height: 64px;
+    flex-shrink: 0;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Force the SplitScreen to fill the .mainArea */
+  .splitWrapper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Calculator Modal Fix */
+  .calculatorModal {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 600px;
+    height: 400px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    z-index: 1000; /* Nuclear option: floats above everything */
+    resize: both;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .calcHeader {
+    background: #333;
+    color: white;
+    padding: 0.5rem;
+    cursor: grab;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /* Passage styling - No yellow border (matches Bluebook) */
+  .passageContainer {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  .passageBorder {
+    /* No border - just padding */
+    padding: 36px; /* More padding for better readability */
+    background-color: #ffffff;
+    min-height: 100%;
+    box-sizing: border-box;
+  }
+
+  .passageContent {
+    font-family: 'Source Serif Pro', 'Merriweather', Georgia, 'Times New Roman', serif;
+    font-size: 20px; /* Larger for better readability */
+    line-height: 2.0; /* More generous line height for readability */
+    color: #1a1a1a;
+    text-align: left;
+    letter-spacing: 0.01em; /* Slight letter spacing for readability */
+  }
+
+  .highlighterWrapper {
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Question container styling */
+  .questionContainer {
+    width: 100%;
+    height: 100%;
+    /* Remove padding since SplitScreen already adds 40px via .paneContent */
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+
+  /* Question Header Bar - Bluebook Style (Gray Bar) */
+  .questionHeaderBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3f4f6; /* Gray background like Bluebook */
+    padding: 14px 18px; /* More padding for better proportions */
+    margin-bottom: 24px; /* More space below */
+    border-radius: 6px;
+  }
+
+  .questionHeaderLeft {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .questionNumber {
+    font-size: 16px; /* Larger for readability */
+    font-weight: 600;
+    background-color: #1f2937; /* Dark square like Bluebook */
+    color: white;
+    padding: 8px 14px; /* More padding */
+    border-radius: 4px;
+    display: inline-block;
+    min-width: 40px;
+    text-align: center;
+  }
+
+  .markForReviewButton {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* More gap */
+    background: none;
+    border: none;
+    padding: 6px 10px; /* More padding */
+    cursor: pointer;
+    font-size: 16px; /* Larger for readability */
+    font-weight: 400;
+    color: #4b5563;
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+
+  .markForReviewButton:hover {
+    background-color: #e5e7eb;
+  }
+
+  .markForReviewButton.markForReviewChecked {
+    color: #1a1a1a;
+    font-weight: 500;
+  }
+
+  .bookmarkIcon {
+    width: 18px;
+    height: 18px;
+    color: #6b7280;
+    transition: all 0.2s;
+  }
+
+  .bookmarkIconFilled {
+    color: #dc2626; /* Red when checked */
+    fill: currentColor;
+  }
+
+  .markForReviewChecked .bookmarkIcon {
+    color: #dc2626;
+    fill: currentColor;
+  }
+
+  .questionHeaderRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Push eliminator to far right */
+  }
+
+  .eliminatorButton {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* More gap */
+    background-color: #ffffff; /* White background to stand out */
+    border: 2px solid #3b82f6; /* Blue border to make it pop */
+    padding: 10px 16px; /* More padding for readability */
+    cursor: pointer;
+    font-size: 16px; /* Larger for readability */
+    font-weight: 600; /* Bolder text */
+    color: #3b82f6; /* Blue text */
+    border-radius: 6px;
+    transition: all 0.2s;
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2); /* Subtle shadow */
+  }
+
+  .eliminatorButton:hover {
+    background-color: #eff6ff; /* Light blue on hover */
+    border-color: #2563eb;
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+    transform: translateY(-1px); /* Slight lift on hover */
+  }
+
+  .eliminatorButtonActive {
+    background-color: #3b82f6 !important; /* Solid blue when active */
+    color: #ffffff !important; /* White text when active */
+    border-color: #3b82f6 !important;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4); /* Stronger shadow when active */
+  }
+
+  .eliminatorButtonActive:hover {
+    background-color: #2563eb !important;
+    border-color: #2563eb !important;
+    box-shadow: 0 6px 16px rgba(59, 130, 246, 0.5);
+  }
+
+  .eliminatorIcon {
+    width: 18px;
+    height: 18px;
+    color: currentColor;
+    stroke-width: 2.5; /* Thicker stroke to stand out */
+  }
+
+  .questionPrompt {
+    font-size: 20px; /* Larger for better readability */
+    font-weight: 400; /* Regular weight */
+    color: #000000; /* Darker black for better readability */
+    margin-bottom: 28px; /* More margin for breathing room */
+    line-height: 1.8; /* Better line height for readability */
+    letter-spacing: 0.01em; /* Slight letter spacing */
+  }
+
+  .optionsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* More gap between options for readability */
+    transition: all 0.3s ease;
+  }
+
+  /* When eliminator mode is active, keep normal gap (no special styling needed) */
+
+  .optionWrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+
+  /* When eliminator mode is active, keep normal gap (no special styling needed) */
+
+  .optionButton {
+    display: flex;
+    align-items: center;
+    gap: 14px; /* More gap */
+    padding: 16px 20px; /* More padding for better readability */
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: left;
+    flex: 1;
+    font-size: 19px; /* Larger for better readability */
+    line-height: 1.7; /* Better line height */
+    letter-spacing: 0.01em; /* Slight letter spacing */
+  }
+
+  /* When eliminator mode is active, keep normal size (no special styling needed) */
+
+  .optionButton:hover:not(:disabled):not(.optionSelected) {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+  }
+
+  .optionButton:hover:not(:disabled).optionSelected {
+    background-color: #2563eb !important; /* Darker blue on hover when selected */
+    border-color: #2563eb !important;
+  }
+
+  .optionButton:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  .optionSelected {
+    background-color: #3b82f6 !important; /* Blue background when selected */
+    border-color: #3b82f6 !important;
+    border-width: 2px;
+  }
+
+  .optionEliminated {
+    opacity: 0.6;
+  }
+
+  .optionButtonEliminated {
+    background-color: #f3f4f6;
+    border-color: #d1d5db;
+    position: relative;
+  }
+
+  .optionButtonEliminated .optionLabel {
+    background-color: #f3f4f6;
+    border-color: #9ca3af;
+    opacity: 0.6;
+  }
+
+  .optionLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%; /* Circular badge */
+    background-color: #ffffff;
+    border: 2px solid #d1d5db;
+    color: #000000; /* Darker black for better readability */
+    font-weight: 600;
+    font-size: 16px;
+    flex-shrink: 0;
+    transition: all 0.2s;
+  }
+
+  .optionLabelSelected {
+    background-color: #ffffff !important; /* White circle when selected */
+    border-color: #ffffff !important;
+    color: #3b82f6 !important; /* Blue letter when selected */
+  }
+
+  .optionText {
+    flex: 1;
+    color: #000000; /* Darker black for better readability */
+    position: relative;
+    min-width: 0; /* Allow text to shrink */
+    transition: color 0.2s;
+  }
+
+  .optionTextSelected {
+    color: #ffffff !important; /* White text when selected */
+  }
+
+  .optionTextEliminated {
+    text-decoration: line-through;
+    color: #6b7280;
+  }
+
+  /* Removed optionIndicator - using circular badge instead */
+
+  /* X button that appears next to options in eliminator mode */
+  .eliminateButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    color: #dc2626; /* Red color for X */
+    cursor: pointer;
+    transition: all 0.2s;
+    flex-shrink: 0;
+  }
+
+  .eliminateButton:hover {
+    background-color: #fee2e2; /* Light red background on hover */
+    border-color: #dc2626;
+    color: #991b1b; /* Darker red on hover */
+  }
+
+  /* Undo button (appears when eliminated outside eliminator mode) */
+  .undoButton {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    color: #4b5563;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .undoButton:hover {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+    color: #1a1a1a;
+  }

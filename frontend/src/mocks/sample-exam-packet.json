@@ -1,0 +1,884 @@
+{
+  "exam_id": "sat_rw_practice_001",
+  "config": {
+    "total_time": 3200,
+    "allowed_tools": []
+  },
+  "routing_logic": {
+    "module_1_threshold": 7
+  },
+  "modules": [
+    {
+      "id": "rw_module_1",
+      "type": "fixed",
+      "question_order": [
+        "rw_q_001",
+        "rw_q_002",
+        "rw_q_003",
+        "rw_q_004",
+        "rw_q_005",
+        "rw_q_006",
+        "rw_q_007",
+        "rw_q_008",
+        "rw_q_009",
+        "rw_q_010",
+        "rw_q_011",
+        "rw_q_012",
+        "rw_q_013",
+        "rw_q_014",
+        "rw_q_015",
+        "rw_q_016",
+        "rw_q_017",
+        "rw_q_018",
+        "rw_q_019",
+        "rw_q_020",
+        "rw_q_021",
+        "rw_q_022",
+        "rw_q_023",
+        "rw_q_024",
+        "rw_q_025",
+        "rw_q_026",
+        "rw_q_027"
+      ]
+    },
+    {
+      "id": "rw_module_2_easy",
+      "type": "fixed",
+      "question_order": [
+        "rw_q_easy_001",
+        "rw_q_easy_002",
+        "rw_q_easy_003",
+        "rw_q_easy_004",
+        "rw_q_easy_005",
+        "rw_q_easy_006",
+        "rw_q_easy_007",
+        "rw_q_easy_008",
+        "rw_q_easy_009",
+        "rw_q_easy_010",
+        "rw_q_easy_011",
+        "rw_q_easy_012",
+        "rw_q_easy_013",
+        "rw_q_easy_014",
+        "rw_q_easy_015",
+        "rw_q_easy_016",
+        "rw_q_easy_017",
+        "rw_q_easy_018",
+        "rw_q_easy_019",
+        "rw_q_easy_020",
+        "rw_q_easy_021",
+        "rw_q_easy_022"
+      ]
+    },
+    {
+      "id": "rw_module_2_hard",
+      "type": "fixed",
+      "question_order": [
+        "rw_q_hard_001",
+        "rw_q_hard_002",
+        "rw_q_hard_003",
+        "rw_q_hard_004",
+        "rw_q_hard_005",
+        "rw_q_hard_006",
+        "rw_q_hard_007",
+        "rw_q_hard_008",
+        "rw_q_hard_009",
+        "rw_q_hard_010",
+        "rw_q_hard_011",
+        "rw_q_hard_012",
+        "rw_q_hard_013",
+        "rw_q_hard_014",
+        "rw_q_hard_015",
+        "rw_q_hard_016",
+        "rw_q_hard_017",
+        "rw_q_hard_018",
+        "rw_q_hard_019",
+        "rw_q_hard_020",
+        "rw_q_hard_021",
+        "rw_q_hard_022"
+      ]
+    }
+  ],
+  "content_bank": {
+    "rw_q_001": {
+      "text": "The following text is from a 1923 novel. As used in the text, what does the word \"arduous\" most nearly mean?\n\n\"The journey through the mountain pass was arduous, taking three days longer than expected and requiring the travelers to abandon most of their supplies.\"",
+      "choices": [
+        { "id": "A", "text": "Difficult" },
+        { "id": "B", "text": "Quick" },
+        { "id": "C", "text": "Pleasant" },
+        { "id": "D", "text": "Familiar" }
+      ],
+      "correct_answer": "A",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_002": {
+      "text": "Which choice completes the text with the most logical and precise word or phrase?\n\nResearchers studying animal behavior have discovered that many species exhibit complex social structures previously thought to be unique to humans. These findings suggest that ______ may be more widespread in the animal kingdom than once believed.",
+      "choices": [
+        { "id": "A", "text": "intelligence" },
+        { "id": "B", "text": "cooperation" },
+        { "id": "C", "text": "competition" },
+        { "id": "D", "text": "isolation" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Text Structure and Purpose"
+    },
+    "rw_q_003": {
+      "text": "The following text is from a scientific article. Which choice best states the main idea of the text?\n\n\"Recent studies have shown that regular exercise can improve cognitive function in older adults. Participants who engaged in moderate physical activity for at least 150 minutes per week demonstrated significant improvements in memory tests compared to those who remained sedentary.\"",
+      "choices": [
+        { "id": "A", "text": "Older adults should avoid strenuous exercise to protect their cognitive health." },
+        { "id": "B", "text": "Exercise has been proven to enhance memory in older adults who exercise regularly." },
+        { "id": "C", "text": "Memory tests are the best way to measure cognitive function in older adults." },
+        { "id": "D", "text": "Sedentary lifestyles have no impact on cognitive function." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Central Ideas and Details"
+    },
+    "rw_q_004": {
+      "text": "While researching a topic, a student has taken the following notes:\n\n- The printing press was invented in the 15th century\n- It revolutionized the spread of information\n- Literacy rates increased dramatically in Europe\n- Books became more affordable and accessible\n\nThe student wants to emphasize the transformative impact of the printing press. Which choice most effectively uses relevant information from the notes to accomplish this goal?",
+      "choices": [
+        { "id": "A", "text": "The printing press, invented in the 15th century, made books more affordable." },
+        { "id": "B", "text": "The 15th-century invention of the printing press revolutionized information dissemination, dramatically increased European literacy rates, and made books more affordable and accessible." },
+        { "id": "C", "text": "Books became more affordable in the 15th century." },
+        { "id": "D", "text": "Literacy rates increased in Europe after the printing press was invented." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Synthesis"
+    },
+    "rw_q_005": {
+      "text": "The following text contains a grammatical error. Which version corrects the error?\n\n\"The team of researchers, who have been studying climate patterns for over a decade, has published their findings in a leading scientific journal.\"",
+      "choices": [
+        { "id": "A", "text": "The team of researchers, who have been studying climate patterns for over a decade, has published their findings in a leading scientific journal." },
+        { "id": "B", "text": "The team of researchers, who has been studying climate patterns for over a decade, have published their findings in a leading scientific journal." },
+        { "id": "C", "text": "The team of researchers, who have been studying climate patterns for over a decade, have published its findings in a leading scientific journal." },
+        { "id": "D", "text": "The team of researchers, who have been studying climate patterns for over a decade, have published their findings in a leading scientific journal." }
+      ],
+      "correct_answer": "D",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_006": {
+      "text": "Which choice most effectively combines the sentences at the underlined portion?\n\n\"The museum announced a new exhibit. It features works by contemporary artists from around the world. The exhibit will run for six months.\"",
+      "choices": [
+        { "id": "A", "text": "exhibit, which features works by contemporary artists from around the world and will run for six months" },
+        { "id": "B", "text": "exhibit featuring works by contemporary artists from around the world, running for six months" },
+        { "id": "C", "text": "exhibit; it features works by contemporary artists from around the world, and it will run for six months" },
+        { "id": "D", "text": "exhibit that features works by contemporary artists from around the world, and it will run for six months" }
+      ],
+      "correct_answer": "A",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_007": {
+      "text": "The following text is from a historical document. As used in the text, what does the word \"precedent\" most nearly mean?\n\n\"The court's decision in this case established an important precedent that would influence legal rulings for decades to come.\"",
+      "choices": [
+        { "id": "A", "text": "Example" },
+        { "id": "B", "text": "Exception" },
+        { "id": "C", "text": "Mistake" },
+        { "id": "D", "text": "Delay" }
+      ],
+      "correct_answer": "A",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_008": {
+      "text": "Which choice best maintains the tone established in the text?\n\nThe passage describes a scientific discovery with formal, objective language. Which choice best fits this tone?",
+      "choices": [
+        { "id": "A", "text": "This discovery is totally awesome and groundbreaking!" },
+        { "id": "B", "text": "This discovery represents a significant advancement in our understanding of molecular biology." },
+        { "id": "C", "text": "Scientists were super excited about this discovery." },
+        { "id": "D", "text": "This discovery is pretty cool and important." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_009": {
+      "text": "The following text may contain a grammatical error. Which version is correct?\n\n\"Neither the students nor the teacher were prepared for the unexpected announcement.\"",
+      "choices": [
+        { "id": "A", "text": "Neither the students nor the teacher were prepared for the unexpected announcement." },
+        { "id": "B", "text": "Neither the students nor the teacher was prepared for the unexpected announcement." },
+        { "id": "C", "text": "Neither the students or the teacher were prepared for the unexpected announcement." },
+        { "id": "D", "text": "Neither the students nor the teacher are prepared for the unexpected announcement." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_010": {
+      "text": "Which choice most effectively sets up the information that follows?\n\n\"Recent archaeological discoveries have revealed new insights into ancient civilizations. ______ These findings challenge long-held assumptions about the technological capabilities of early societies.\"",
+      "choices": [
+        { "id": "A", "text": "Archaeologists have always been interested in ancient civilizations." },
+        { "id": "B", "text": "For example, evidence of sophisticated metalworking techniques has been found at sites previously thought to be primitive." },
+        { "id": "C", "text": "Ancient civilizations are fascinating to study." },
+        { "id": "D", "text": "Many people enjoy learning about history." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_011": {
+      "text": "The following text is from a literary analysis. Which choice best describes the function of the underlined portion?\n\n\"The author uses vivid imagery throughout the novel to create a sense of place. The detailed descriptions of the landscape help readers visualize the setting and understand the characters' connection to their environment.\"",
+      "choices": [
+        { "id": "A", "text": "It provides evidence for the claim made in the previous sentence." },
+        { "id": "B", "text": "It introduces a new topic unrelated to the previous sentence." },
+        { "id": "C", "text": "It contradicts the statement in the previous sentence." },
+        { "id": "D", "text": "It summarizes the main argument of the passage." }
+      ],
+      "correct_answer": "A",
+      "skill_tag": "Reading: Text Structure and Purpose"
+    },
+    "rw_q_012": {
+      "text": "Which choice completes the text so that it conforms to the conventions of Standard English?\n\n\"The committee members, after reviewing all proposals, ______ to recommend the most cost-effective solution.\"",
+      "choices": [
+        { "id": "A", "text": "decides" },
+        { "id": "B", "text": "decide" },
+        { "id": "C", "text": "deciding" },
+        { "id": "D", "text": "have decided" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_013": {
+      "text": "The following text is from a research paper. As used in the text, what does the word \"paradigm\" most nearly mean?\n\n\"The introduction of quantum computing represents a fundamental paradigm shift in how we approach computational problems.\"",
+      "choices": [
+        { "id": "A", "text": "Model" },
+        { "id": "B", "text": "Problem" },
+        { "id": "C", "text": "Solution" },
+        { "id": "D", "text": "Delay" }
+      ],
+      "correct_answer": "A",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_014": {
+      "text": "Which choice most effectively uses data from the graph to support the claim?\n\n[Note: In a real exam, this would reference a graph or chart. For this sample, we'll use a text-based description.]\n\nThe claim: \"Solar energy adoption has increased significantly over the past decade.\"\n\nData: Solar installations increased from 1,000 in 2010 to 50,000 in 2020.",
+      "choices": [
+        { "id": "A", "text": "Solar energy is a good source of renewable power." },
+        { "id": "B", "text": "Solar installations increased from 1,000 in 2010 to 50,000 in 2020, representing a 50-fold increase over the decade." },
+        { "id": "C", "text": "Many people use solar energy." },
+        { "id": "D", "text": "Solar energy adoption has increased." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Quantitative"
+    },
+    "rw_q_015": {
+      "text": "The following text may contain a grammatical error. Which version is correct?\n\n\"Each of the participants were given a questionnaire to complete.\"",
+      "choices": [
+        { "id": "A", "text": "Each of the participants were given a questionnaire to complete." },
+        { "id": "B", "text": "Each of the participants was given a questionnaire to complete." },
+        { "id": "C", "text": "Each of the participants are given a questionnaire to complete." },
+        { "id": "D", "text": "Each participant were given a questionnaire to complete." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_016": {
+      "text": "Which choice best maintains the style and tone of the text?\n\nThe passage uses formal academic language. Which choice best matches this style?",
+      "choices": [
+        { "id": "A", "text": "This is really important stuff that everyone should know about." },
+        { "id": "B", "text": "This research has significant implications for our understanding of the subject." },
+        { "id": "C", "text": "This is super cool research that's gonna change everything." },
+        { "id": "D", "text": "This research is pretty important and stuff." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_017": {
+      "text": "The following text is from a historical analysis. Which choice best states the relationship between the two sentences?\n\n\"The Industrial Revolution transformed manufacturing processes across Europe. This transformation led to significant social and economic changes in urban areas.\"",
+      "choices": [
+        { "id": "A", "text": "The second sentence contradicts the first." },
+        { "id": "B", "text": "The second sentence provides a consequence of the first." },
+        { "id": "C", "text": "The second sentence provides an example that contradicts the first." },
+        { "id": "D", "text": "The second sentence introduces an unrelated topic." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Text Structure and Purpose"
+    },
+    "rw_q_018": {
+      "text": "Which choice completes the text with the most logical and precise word or phrase?\n\n\"The research team's findings were ______ by independent studies conducted at multiple institutions, strengthening the validity of their conclusions.\"",
+      "choices": [
+        { "id": "A", "text": "contradicted" },
+        { "id": "B", "text": "corroborated" },
+        { "id": "C", "text": "ignored" },
+        { "id": "D", "text": "questioned" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_019": {
+      "text": "The following text contains a grammatical error. Which version corrects the error?\n\n\"The data shows that students who participate in extracurricular activities tend to perform better academically than those who don't.\"",
+      "choices": [
+        { "id": "A", "text": "The data shows that students who participate in extracurricular activities tend to perform better academically than those who don't." },
+        { "id": "B", "text": "The data show that students who participate in extracurricular activities tend to perform better academically than those who don't." },
+        { "id": "C", "text": "The data are showing that students who participate in extracurricular activities tend to perform better academically than those who don't." },
+        { "id": "D", "text": "The data is showing that students who participate in extracurricular activities tend to perform better academically than those who don't." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_020": {
+      "text": "Which choice most effectively combines the sentences at the underlined portion?\n\n\"The library has expanded its digital collection. It now includes over 10,000 e-books. The collection is available to all cardholders.\"",
+      "choices": [
+        { "id": "A", "text": "collection, which now includes over 10,000 e-books and is available to all cardholders" },
+        { "id": "B", "text": "collection; it now includes over 10,000 e-books, and it is available to all cardholders" },
+        { "id": "C", "text": "collection that now includes over 10,000 e-books, and it is available to all cardholders" },
+        { "id": "D", "text": "collection, now including over 10,000 e-books, available to all cardholders" }
+      ],
+      "correct_answer": "A",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_021": {
+      "text": "The following text is from a scientific article. As used in the text, what does the word \"mitigate\" most nearly mean?\n\n\"Researchers are developing new strategies to mitigate the effects of climate change on coastal ecosystems.\"",
+      "choices": [
+        { "id": "A", "text": "Increase" },
+        { "id": "B", "text": "Lessen" },
+        { "id": "C", "text": "Ignore" },
+        { "id": "D", "text": "Study" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_022": {
+      "text": "Which choice best describes the function of the underlined portion in the text?\n\n\"The author employs a nonlinear narrative structure, jumping between different time periods. This technique allows readers to piece together the story gradually, creating a sense of mystery and engagement.\"",
+      "choices": [
+        { "id": "A", "text": "It introduces a new character." },
+        { "id": "B", "text": "It explains the purpose of the technique mentioned in the previous sentence." },
+        { "id": "C", "text": "It contradicts the previous statement." },
+        { "id": "D", "text": "It provides background information about the author." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Text Structure and Purpose"
+    },
+    "rw_q_023": {
+      "text": "The following text may contain a grammatical error. Which version is correct?\n\n\"The team, along with their coach, are preparing for the championship game.\"",
+      "choices": [
+        { "id": "A", "text": "The team, along with their coach, are preparing for the championship game." },
+        { "id": "B", "text": "The team, along with their coach, is preparing for the championship game." },
+        { "id": "C", "text": "The team along with their coach are preparing for the championship game." },
+        { "id": "D", "text": "The team, along with their coach, were preparing for the championship game." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_024": {
+      "text": "Which choice most effectively sets up the information that follows?\n\n\"Modern communication technology has transformed how people interact. ______ Social media platforms, video conferencing, and instant messaging have created new ways for people to connect across vast distances.\"",
+      "choices": [
+        { "id": "A", "text": "People have always wanted to communicate with each other." },
+        { "id": "B", "text": "For instance, social media platforms, video conferencing, and instant messaging have created new ways for people to connect across vast distances." },
+        { "id": "C", "text": "Technology is constantly changing." },
+        { "id": "D", "text": "Communication is important for human relationships." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_025": {
+      "text": "The following text is from a literary analysis. Which choice best states the main idea of the text?\n\n\"The novel explores themes of identity and belonging through the protagonist's journey of self-discovery. As the character navigates different cultural contexts, they must reconcile conflicting aspects of their heritage and personal values.\"",
+      "choices": [
+        { "id": "A", "text": "The novel is about a character who travels to many different places." },
+        { "id": "B", "text": "The novel examines how individuals navigate questions of identity and belonging across different cultural contexts." },
+        { "id": "C", "text": "The protagonist has many adventures in the novel." },
+        { "id": "D", "text": "Cultural contexts are important in literature." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Central Ideas and Details"
+    },
+    "rw_q_026": {
+      "text": "Which choice completes the text so that it conforms to the conventions of Standard English?\n\n\"The collection of rare manuscripts ______ been carefully preserved in the university's archives for over a century.\"",
+      "choices": [
+        { "id": "A", "text": "have" },
+        { "id": "B", "text": "has" },
+        { "id": "C", "text": "are" },
+        { "id": "D", "text": "were" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_027": {
+      "text": "The following text is from a research paper. As used in the text, what does the word \"empirical\" most nearly mean?\n\n\"The study's conclusions are based on empirical evidence gathered through rigorous experimentation and observation.\"",
+      "choices": [
+        { "id": "A", "text": "Theoretical" },
+        { "id": "B", "text": "Observable" },
+        { "id": "C", "text": "Speculative" },
+        { "id": "D", "text": "Unreliable" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_easy_001": {
+      "text": "Which choice completes the text with the most logical and precise word or phrase?\n\n\"The new policy was designed to improve workplace safety. ______, it has led to a significant reduction in workplace accidents.\"",
+      "choices": [
+        { "id": "A", "text": "However" },
+        { "id": "B", "text": "Consequently" },
+        { "id": "C", "text": "Nevertheless" },
+        { "id": "D", "text": "Instead" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_easy_002": {
+      "text": "The following text may contain a grammatical error. Which version is correct?\n\n\"The group of volunteers are working together to clean up the park.\"",
+      "choices": [
+        { "id": "A", "text": "The group of volunteers are working together to clean up the park." },
+        { "id": "B", "text": "The group of volunteers is working together to clean up the park." },
+        { "id": "C", "text": "The group of volunteers were working together to clean up the park." },
+        { "id": "D", "text": "The group of volunteers be working together to clean up the park." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_easy_003": {
+      "text": "The following text is from a news article. As used in the text, what does the word \"substantial\" most nearly mean?\n\n\"The company reported a substantial increase in profits compared to the previous quarter.\"",
+      "choices": [
+        { "id": "A", "text": "Small" },
+        { "id": "B", "text": "Large" },
+        { "id": "C", "text": "Temporary" },
+        { "id": "D", "text": "Uncertain" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_easy_004": {
+      "text": "Which choice most effectively combines the sentences at the underlined portion?\n\n\"The museum opened a new exhibit. It features interactive displays. The exhibit is popular with visitors.\"",
+      "choices": [
+        { "id": "A", "text": "exhibit featuring interactive displays that is popular with visitors" },
+        { "id": "B", "text": "exhibit; it features interactive displays, and it is popular with visitors" },
+        { "id": "C", "text": "exhibit that features interactive displays, and it is popular with visitors" },
+        { "id": "D", "text": "exhibit, which features interactive displays and is popular with visitors" }
+      ],
+      "correct_answer": "A",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_easy_005": {
+      "text": "Which choice best maintains the style and tone of the text?\n\nThe passage uses formal, informative language. Which choice best matches this style?",
+      "choices": [
+        { "id": "A", "text": "This is really cool information that everyone should check out!" },
+        { "id": "B", "text": "This information provides valuable insights into the subject matter." },
+        { "id": "C", "text": "This stuff is super interesting and important." },
+        { "id": "D", "text": "This is pretty neat information about the topic." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_easy_006": {
+      "text": "The following text contains a grammatical error. Which version corrects the error?\n\n\"The results of the study indicates that further research is needed.\"",
+      "choices": [
+        { "id": "A", "text": "The results of the study indicates that further research is needed." },
+        { "id": "B", "text": "The results of the study indicate that further research is needed." },
+        { "id": "C", "text": "The results of the study is indicating that further research is needed." },
+        { "id": "D", "text": "The results of the study are indicating that further research is needed." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_easy_007": {
+      "text": "The following text is from a scientific article. Which choice best states the main idea of the text?\n\n\"Recent studies have demonstrated that regular meditation can reduce stress levels and improve overall well-being. Participants who meditated for just 10 minutes daily showed measurable improvements in anxiety and mood.\"",
+      "choices": [
+        { "id": "A", "text": "Meditation is a difficult practice that requires extensive training." },
+        { "id": "B", "text": "Regular meditation has been shown to reduce stress and improve well-being." },
+        { "id": "C", "text": "Stress levels are difficult to measure accurately." },
+        { "id": "D", "text": "Anxiety and mood are unrelated to meditation practice." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Central Ideas and Details"
+    },
+    "rw_q_easy_008": {
+      "text": "Which choice completes the text with the most logical and precise word or phrase?\n\n\"The research team's methodology was ______ by peer reviewers, who praised its rigor and attention to detail.\"",
+      "choices": [
+        { "id": "A", "text": "criticized" },
+        { "id": "B", "text": "commended" },
+        { "id": "C", "text": "ignored" },
+        { "id": "D", "text": "questioned" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_easy_009": {
+      "text": "The following text may contain a grammatical error. Which version is correct?\n\n\"Neither the manager nor the employees was satisfied with the new schedule.\"",
+      "choices": [
+        { "id": "A", "text": "Neither the manager nor the employees was satisfied with the new schedule." },
+        { "id": "B", "text": "Neither the manager nor the employees were satisfied with the new schedule." },
+        { "id": "C", "text": "Neither the manager or the employees were satisfied with the new schedule." },
+        { "id": "D", "text": "Neither the manager nor the employees are satisfied with the new schedule." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_easy_010": {
+      "text": "Which choice most effectively sets up the information that follows?\n\n\"The library has implemented several new programs to serve the community. ______ These programs include literacy workshops, technology training, and cultural events.\"",
+      "choices": [
+        { "id": "A", "text": "Libraries are important community resources." },
+        { "id": "B", "text": "For example, these programs include literacy workshops, technology training, and cultural events." },
+        { "id": "C", "text": "Many people use libraries regularly." },
+        { "id": "D", "text": "Libraries have many books." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_easy_011": {
+      "text": "The following text is from a historical document. As used in the text, what does the word \"profound\" most nearly mean?\n\n\"The discovery had a profound impact on scientific understanding, fundamentally changing how researchers approached the field.\"",
+      "choices": [
+        { "id": "A", "text": "Minor" },
+        { "id": "B", "text": "Deep" },
+        { "id": "C", "text": "Temporary" },
+        { "id": "D", "text": "Unclear" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_easy_012": {
+      "text": "Which choice best describes the function of the underlined portion in the text?\n\n\"The author uses descriptive language to create vivid imagery. These detailed descriptions help readers visualize the setting and connect emotionally with the narrative.\"",
+      "choices": [
+        { "id": "A", "text": "It introduces a new character." },
+        { "id": "B", "text": "It explains the effect of the technique mentioned in the previous sentence." },
+        { "id": "C", "text": "It contradicts the previous statement." },
+        { "id": "D", "text": "It provides background information about the author." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Text Structure and Purpose"
+    },
+    "rw_q_easy_013": {
+      "text": "The following text contains a grammatical error. Which version corrects the error?\n\n\"The number of students enrolled in the program have increased significantly this year.\"",
+      "choices": [
+        { "id": "A", "text": "The number of students enrolled in the program have increased significantly this year." },
+        { "id": "B", "text": "The number of students enrolled in the program has increased significantly this year." },
+        { "id": "C", "text": "The number of students enrolled in the program are increasing significantly this year." },
+        { "id": "D", "text": "The number of students enrolled in the program is increasing significantly this year." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_easy_014": {
+      "text": "Which choice most effectively combines the sentences at the underlined portion?\n\n\"The company launched a new product line. It focuses on sustainable materials. The product line has received positive reviews.\"",
+      "choices": [
+        { "id": "A", "text": "product line focusing on sustainable materials that has received positive reviews" },
+        { "id": "B", "text": "product line; it focuses on sustainable materials, and it has received positive reviews" },
+        { "id": "C", "text": "product line that focuses on sustainable materials, and it has received positive reviews" },
+        { "id": "D", "text": "product line, which focuses on sustainable materials and has received positive reviews" }
+      ],
+      "correct_answer": "A",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_easy_015": {
+      "text": "The following text is from a research paper. Which choice best states the main idea of the text?\n\n\"Studies have shown that regular exercise can improve cardiovascular health. Participants who engaged in moderate exercise for at least 30 minutes daily showed significant improvements in heart function.\"",
+      "choices": [
+        { "id": "A", "text": "Exercise is only beneficial for young people." },
+        { "id": "B", "text": "Regular exercise has been proven to improve cardiovascular health." },
+        { "id": "C", "text": "Heart function cannot be measured accurately." },
+        { "id": "D", "text": "Moderate exercise is not effective for health improvement." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Central Ideas and Details"
+    },
+    "rw_q_easy_016": {
+      "text": "Which choice completes the text so that it conforms to the conventions of Standard English?\n\n\"The series of lectures ______ been well-received by students and faculty alike.\"",
+      "choices": [
+        { "id": "A", "text": "have" },
+        { "id": "B", "text": "has" },
+        { "id": "C", "text": "are" },
+        { "id": "D", "text": "were" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_easy_017": {
+      "text": "The following text is from a literary analysis. As used in the text, what does the word \"nuanced\" most nearly mean?\n\n\"The author's portrayal of the character is nuanced, revealing complex motivations and conflicting emotions.\"",
+      "choices": [
+        { "id": "A", "text": "Simple" },
+        { "id": "B", "text": "Subtle" },
+        { "id": "C", "text": "Obvious" },
+        { "id": "D", "text": "Confusing" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_easy_018": {
+      "text": "Which choice best maintains the style and tone of the text?\n\nThe passage uses academic, formal language. Which choice best matches this style?",
+      "choices": [
+        { "id": "A", "text": "This research is totally groundbreaking and amazing!" },
+        { "id": "B", "text": "This research represents a significant contribution to the field." },
+        { "id": "C", "text": "This research is super cool and important." },
+        { "id": "D", "text": "This research is pretty good and stuff." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_easy_019": {
+      "text": "The following text may contain a grammatical error. Which version is correct?\n\n\"The collection of rare books are housed in a climate-controlled facility.\"",
+      "choices": [
+        { "id": "A", "text": "The collection of rare books are housed in a climate-controlled facility." },
+        { "id": "B", "text": "The collection of rare books is housed in a climate-controlled facility." },
+        { "id": "C", "text": "The collection of rare books were housed in a climate-controlled facility." },
+        { "id": "D", "text": "The collection of rare books be housed in a climate-controlled facility." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_easy_020": {
+      "text": "Which choice most effectively sets up the information that follows?\n\n\"The university has expanded its research facilities. ______ These new facilities include state-of-the-art laboratories and collaborative workspaces.\"",
+      "choices": [
+        { "id": "A", "text": "Universities are important institutions." },
+        { "id": "B", "text": "For example, these new facilities include state-of-the-art laboratories and collaborative workspaces." },
+        { "id": "C", "text": "Research is important for universities." },
+        { "id": "D", "text": "Many universities have laboratories." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_easy_021": {
+      "text": "The following text is from a scientific article. Which choice best describes the function of the underlined portion?\n\n\"The study used a randomized controlled trial design. This methodology ensures that the results are not influenced by external factors or researcher bias.\"",
+      "choices": [
+        { "id": "A", "text": "It introduces a new research topic." },
+        { "id": "B", "text": "It explains the advantage of the methodology mentioned in the previous sentence." },
+        { "id": "C", "text": "It contradicts the previous statement." },
+        { "id": "D", "text": "It provides background information about the researchers." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Text Structure and Purpose"
+    },
+    "rw_q_easy_022": {
+      "text": "Which choice completes the text with the most logical and precise word or phrase?\n\n\"The artist's latest work has been ______ by critics, who have praised its innovation and emotional depth.\"",
+      "choices": [
+        { "id": "A", "text": "dismissed" },
+        { "id": "B", "text": "acclaimed" },
+        { "id": "C", "text": "ignored" },
+        { "id": "D", "text": "criticized" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_hard_001": {
+      "text": "The following text is from a philosophical essay. As used in the text, what does the word \"paradoxical\" most nearly mean?\n\n\"The situation presents a paradoxical challenge: the very act of seeking happiness often prevents its attainment.\"",
+      "choices": [
+        { "id": "A", "text": "Clear" },
+        { "id": "B", "text": "Contradictory" },
+        { "id": "C", "text": "Simple" },
+        { "id": "D", "text": "Pleasant" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_hard_002": {
+      "text": "Which choice most effectively uses data from the graph to support the claim?\n\n[Note: In a real exam, this would reference a graph. For this sample, we'll use a text-based description.]\n\nThe claim: \"Economic inequality has increased dramatically over the past three decades.\"\n\nData: The Gini coefficient increased from 0.35 in 1990 to 0.48 in 2020, representing a 37% increase.",
+      "choices": [
+        { "id": "A", "text": "Economic inequality is a complex issue." },
+        { "id": "B", "text": "The Gini coefficient increased from 0.35 in 1990 to 0.48 in 2020, representing a 37% increase that supports the claim of dramatic growth in economic inequality." },
+        { "id": "C", "text": "The Gini coefficient measures inequality." },
+        { "id": "D", "text": "Economic inequality has increased." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Quantitative"
+    },
+    "rw_q_hard_003": {
+      "text": "The following text is from a literary analysis. Which choice best states the relationship between the two sentences?\n\n\"The author employs stream-of-consciousness narration to reveal the character's inner thoughts. This technique allows readers to experience the character's mental processes directly, creating an intimate connection with the narrative.\"",
+      "choices": [
+        { "id": "A", "text": "The second sentence contradicts the first." },
+        { "id": "B", "text": "The second sentence explains the effect of the technique mentioned in the first." },
+        { "id": "C", "text": "The second sentence provides an example that contradicts the first." },
+        { "id": "D", "text": "The second sentence introduces an unrelated topic." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Text Structure and Purpose"
+    },
+    "rw_q_hard_004": {
+      "text": "Which choice completes the text so that it conforms to the conventions of Standard English?\n\n\"The committee, composed of experts from various fields, ______ to recommend a comprehensive approach to the problem.\"",
+      "choices": [
+        { "id": "A", "text": "decides" },
+        { "id": "B", "text": "decide" },
+        { "id": "C", "text": "deciding" },
+        { "id": "D", "text": "have decided" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_hard_005": {
+      "text": "The following text is from a research paper. As used in the text, what does the word \"empirical\" most nearly mean?\n\n\"The study's conclusions are based on empirical evidence gathered through rigorous experimentation and observation, rather than theoretical speculation.\"",
+      "choices": [
+        { "id": "A", "text": "Theoretical" },
+        { "id": "B", "text": "Observable" },
+        { "id": "C", "text": "Speculative" },
+        { "id": "D", "text": "Unreliable" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_hard_006": {
+      "text": "Which choice most effectively combines the sentences at the underlined portion?\n\n\"The research team developed a new methodology. It incorporates machine learning algorithms. The methodology has been validated through multiple studies.\"",
+      "choices": [
+        { "id": "A", "text": "methodology incorporating machine learning algorithms that has been validated through multiple studies" },
+        { "id": "B", "text": "methodology; it incorporates machine learning algorithms, and it has been validated through multiple studies" },
+        { "id": "C", "text": "methodology that incorporates machine learning algorithms, and it has been validated through multiple studies" },
+        { "id": "D", "text": "methodology, which incorporates machine learning algorithms and has been validated through multiple studies" }
+      ],
+      "correct_answer": "A",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_hard_007": {
+      "text": "The following text is from a historical analysis. Which choice best states the main idea of the text?\n\n\"The Renaissance period marked a fundamental shift in European thought, moving away from medieval scholasticism toward humanistic inquiry. This intellectual transformation influenced art, science, and philosophy, creating a foundation for modern Western civilization.\"",
+      "choices": [
+        { "id": "A", "text": "The Renaissance was a time of artistic achievement only." },
+        { "id": "B", "text": "The Renaissance represented a fundamental intellectual shift that influenced multiple fields and shaped modern Western civilization." },
+        { "id": "C", "text": "Medieval scholasticism was superior to Renaissance humanism." },
+        { "id": "D", "text": "The Renaissance had no lasting impact on Western civilization." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Central Ideas and Details"
+    },
+    "rw_q_hard_008": {
+      "text": "The following text contains a grammatical error. Which version corrects the error?\n\n\"The data from the multiple studies indicates a clear trend toward increased environmental awareness.\"",
+      "choices": [
+        { "id": "A", "text": "The data from the multiple studies indicates a clear trend toward increased environmental awareness." },
+        { "id": "B", "text": "The data from the multiple studies indicate a clear trend toward increased environmental awareness." },
+        { "id": "C", "text": "The data from the multiple studies is indicating a clear trend toward increased environmental awareness." },
+        { "id": "D", "text": "The data from the multiple studies are indicating a clear trend toward increased environmental awareness." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_hard_009": {
+      "text": "Which choice most effectively sets up the information that follows?\n\n\"The research methodology employed multiple data collection techniques. ______ These techniques included surveys, interviews, and observational studies to ensure comprehensive data gathering.\"",
+      "choices": [
+        { "id": "A", "text": "Research methodologies are important for studies." },
+        { "id": "B", "text": "For example, these techniques included surveys, interviews, and observational studies to ensure comprehensive data gathering." },
+        { "id": "C", "text": "Data collection is a key part of research." },
+        { "id": "D", "text": "Many researchers use surveys in their work." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_hard_010": {
+      "text": "The following text is from a scientific article. As used in the text, what does the word \"mitigate\" most nearly mean?\n\n\"Researchers are developing new strategies to mitigate the effects of climate change on coastal ecosystems, focusing on both prevention and adaptation measures.\"",
+      "choices": [
+        { "id": "A", "text": "Increase" },
+        { "id": "B", "text": "Lessen" },
+        { "id": "C", "text": "Ignore" },
+        { "id": "D", "text": "Study" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_hard_011": {
+      "text": "Which choice best describes the function of the underlined portion in the text?\n\n\"The author employs a nonlinear narrative structure, jumping between different time periods and perspectives. This technique allows readers to piece together the story gradually, creating a sense of mystery and engagement while revealing character motivations through temporal juxtaposition.\"",
+      "choices": [
+        { "id": "A", "text": "It introduces a new character." },
+        { "id": "B", "text": "It elaborates on the effects of the technique mentioned earlier." },
+        { "id": "C", "text": "It contradicts the previous statement." },
+        { "id": "D", "text": "It provides background information about the author." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Text Structure and Purpose"
+    },
+    "rw_q_hard_012": {
+      "text": "The following text may contain a grammatical error. Which version is correct?\n\n\"The team of researchers, along with their advisors, are preparing to publish their findings.\"",
+      "choices": [
+        { "id": "A", "text": "The team of researchers, along with their advisors, are preparing to publish their findings." },
+        { "id": "B", "text": "The team of researchers, along with their advisors, is preparing to publish their findings." },
+        { "id": "C", "text": "The team of researchers along with their advisors are preparing to publish their findings." },
+        { "id": "D", "text": "The team of researchers, along with their advisors, were preparing to publish their findings." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_hard_013": {
+      "text": "Which choice most effectively uses data from the graph to support the claim?\n\n[Note: In a real exam, this would reference a graph. For this sample, we'll use a text-based description.]\n\nThe claim: \"Urban population growth has accelerated significantly in developing countries.\"\n\nData: Urban population in developing countries increased from 1.2 billion in 1990 to 3.1 billion in 2020, representing a 158% increase.",
+      "choices": [
+        { "id": "A", "text": "Urban populations are growing worldwide." },
+        { "id": "B", "text": "Urban population in developing countries increased from 1.2 billion in 1990 to 3.1 billion in 2020, representing a 158% increase that supports the claim of accelerated growth." },
+        { "id": "C", "text": "Developing countries have large populations." },
+        { "id": "D", "text": "Urban population growth is an important trend." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Quantitative"
+    },
+    "rw_q_hard_014": {
+      "text": "The following text is from a literary analysis. Which choice best states the main idea of the text?\n\n\"The novel explores themes of identity and belonging through the protagonist's journey of self-discovery. As the character navigates different cultural contexts, they must reconcile conflicting aspects of their heritage and personal values, ultimately arriving at a more nuanced understanding of self.\"",
+      "choices": [
+        { "id": "A", "text": "The novel is about a character who travels to many different places." },
+        { "id": "B", "text": "The novel examines how individuals navigate questions of identity and belonging across different cultural contexts to achieve a more nuanced understanding of self." },
+        { "id": "C", "text": "The protagonist has many adventures in the novel." },
+        { "id": "D", "text": "Cultural contexts are important in literature." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Central Ideas and Details"
+    },
+    "rw_q_hard_015": {
+      "text": "Which choice completes the text with the most logical and precise word or phrase?\n\n\"The research team's findings were ______ by independent studies conducted at multiple institutions, strengthening the validity of their conclusions and establishing a robust foundation for future research.\"",
+      "choices": [
+        { "id": "A", "text": "contradicted" },
+        { "id": "B", "text": "corroborated" },
+        { "id": "C", "text": "ignored" },
+        { "id": "D", "text": "questioned" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_hard_016": {
+      "text": "The following text contains a grammatical error. Which version corrects the error?\n\n\"The collection of rare manuscripts have been carefully preserved in the university's archives for over a century.\"",
+      "choices": [
+        { "id": "A", "text": "The collection of rare manuscripts have been carefully preserved in the university's archives for over a century." },
+        { "id": "B", "text": "The collection of rare manuscripts has been carefully preserved in the university's archives for over a century." },
+        { "id": "C", "text": "The collection of rare manuscripts are being carefully preserved in the university's archives for over a century." },
+        { "id": "D", "text": "The collection of rare manuscripts is being carefully preserved in the university's archives for over a century." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_hard_017": {
+      "text": "Which choice most effectively combines the sentences at the underlined portion?\n\n\"The museum has expanded its digital collection. It now includes over 50,000 high-resolution images. The collection is accessible to researchers worldwide.\"",
+      "choices": [
+        { "id": "A", "text": "collection, which now includes over 50,000 high-resolution images and is accessible to researchers worldwide" },
+        { "id": "B", "text": "collection; it now includes over 50,000 high-resolution images, and it is accessible to researchers worldwide" },
+        { "id": "C", "text": "collection that now includes over 50,000 high-resolution images, and it is accessible to researchers worldwide" },
+        { "id": "D", "text": "collection, now including over 50,000 high-resolution images, accessible to researchers worldwide" }
+      ],
+      "correct_answer": "A",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_hard_018": {
+      "text": "The following text is from a philosophical essay. As used in the text, what does the word \"dialectical\" most nearly mean?\n\n\"The philosopher's approach is dialectical, examining ideas through the tension between opposing viewpoints to arrive at a synthesis.\"",
+      "choices": [
+        { "id": "A", "text": "One-sided" },
+        { "id": "B", "text": "Argumentative" },
+        { "id": "C", "text": "Contradictory" },
+        { "id": "D", "text": "Unclear" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Words in Context"
+    },
+    "rw_q_hard_019": {
+      "text": "Which choice best maintains the style and tone of the text?\n\nThe passage uses formal, academic language with precise terminology. Which choice best matches this style?",
+      "choices": [
+        { "id": "A", "text": "This research is totally groundbreaking and amazing!" },
+        { "id": "B", "text": "This research represents a significant methodological contribution to the field, establishing new parameters for future inquiry." },
+        { "id": "C", "text": "This research is super cool and important." },
+        { "id": "D", "text": "This research is pretty good and stuff." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Expression of Ideas"
+    },
+    "rw_q_hard_020": {
+      "text": "The following text is from a research paper. Which choice best describes the function of the underlined portion?\n\n\"The study employed a mixed-methods approach, combining quantitative surveys with qualitative interviews. This methodology ensures that the research captures both statistical trends and nuanced individual experiences, providing a comprehensive understanding of the phenomenon.\"",
+      "choices": [
+        { "id": "A", "text": "It introduces a new research topic." },
+        { "id": "B", "text": "It explains the advantage of the methodology mentioned in the previous sentence." },
+        { "id": "C", "text": "It contradicts the previous statement." },
+        { "id": "D", "text": "It provides background information about the researchers." }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Reading: Text Structure and Purpose"
+    },
+    "rw_q_hard_021": {
+      "text": "Which choice completes the text so that it conforms to the conventions of Standard English?\n\n\"The series of experiments, each designed to test a different hypothesis, ______ yielded consistent results across all conditions.\"",
+      "choices": [
+        { "id": "A", "text": "have" },
+        { "id": "B", "text": "has" },
+        { "id": "C", "text": "are" },
+        { "id": "D", "text": "were" }
+      ],
+      "correct_answer": "B",
+      "skill_tag": "Writing: Standard English Conventions"
+    },
+    "rw_q_hard_022": {
+      "text": "The following text is from a historical analysis. As used in the text, what does the word \"precedent\" most nearly mean?\n\n\"The court's decision in this case established an important precedent that would influence legal rulings for decades to come, shaping the interpretation of constitutional principles.\"",
+      "choices": [
+        { "id": "A", "text": "Example" },
+        { "id": "B", "text": "Exception" },
+        { "id": "C", "text": "Mistake" },
+        { "id": "D", "text": "Delay" }
+      ],
+      "correct_answer": "A",
+      "skill_tag": "Reading: Words in Context"
+    }
+  }
+}

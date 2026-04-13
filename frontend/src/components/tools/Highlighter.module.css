@@ -1,0 +1,128 @@
+.container {
+  position: relative;
+  user-select: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
+.highlight {
+  background-color: #fef08a; /* Yellow highlight color */
+  color: inherit;
+  padding: 2px 0;
+  cursor: text; /* Allow text selection */
+  border-radius: 2px;
+  user-select: text; /* Ensure text inside highlights can be selected */
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
+.highlight:hover {
+  background-color: #fde047; /* Slightly darker on hover */
+}
+
+.highlightBlue {
+  background-color: #bfdbfe; /* Light blue highlight color */
+  color: inherit;
+  padding: 2px 0;
+  cursor: text; /* Allow text selection */
+  border-radius: 2px;
+  user-select: text; /* Ensure text inside highlights can be selected */
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+}
+
+.highlightBlue:hover {
+  background-color: #93c5fd; /* Slightly darker on hover */
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 1000;
+  transform: translate(-50%, -100%);
+  pointer-events: auto;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 8px;
+}
+
+.tooltipContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.colorPicker {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.colorButton {
+  width: 32px;
+  height: 32px;
+  border: 2px solid #d1d5db;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+
+.colorButton:hover {
+  border-color: #9ca3af;
+  transform: scale(1.1);
+}
+
+.colorButtonActive {
+  border-color: #3b82f6;
+  border-width: 3px;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.tooltipButtons {
+  display: flex;
+  gap: 8px;
+}
+
+.unhighlightButton {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  color: #1f2937;
+}
+
+.unhighlightButton:hover {
+  background-color: #f9fafb;
+  border-color: #9ca3af;
+}
+
+.highlightButton {
+  background-color: #fbbf24;
+  color: #1f2937;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.highlightButton:hover {
+  background-color: #f59e0b;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .highlight {
+    background-color: #854d0e; /* Darker yellow for dark mode */
+    color: #fef08a;
+  }
+
+  .highlight:hover {
+    background-color: #a16207;
+  }
+
+  .highlightButton {
+    background-color: #f59e0b;
+    color: #1f2937;
+  }
+}

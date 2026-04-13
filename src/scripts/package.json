@@ -1,0 +1,30 @@
+{
+  "name": "socratic-graph-seeder",
+  "version": "1.0.0",
+  "description": "Seeder script for Socratic Graph taxonomy",
+  "type": "module",
+  "scripts": {
+    "seed": "tsx seed_taxonomy.ts",
+    "ingest": "tsx ingest_content.ts",
+    "ingest:stream-b": "tsx ingest_content.ts --stream-b-only",
+    "ingest:stream-b:clean": "tsx ingest_content.ts --stream-b-only --clean-stream-b",
+    "ingest:stream-b:ocr": "tsx ingest_content_stream_b_ocr.ts",
+    "mine:traps": "tsx mine_traps.ts",
+    "test:agent": "tsx test_agent.ts",
+    "test:brain": "tsx test_brain.ts"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "dotenv": "^16.4.5",
+    "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "pdf2pic": "^3.1.1",
+    "pg": "^8.11.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/pg": "^8.10.9",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  }
+}
